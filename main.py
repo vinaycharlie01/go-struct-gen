@@ -204,6 +204,14 @@ class JSONToGoConverter:
                 return "string"
         if isinstance(val, (int, float)):
             if isinstance(val, int) and -2147483648 < val < 2147483647:
+                 # if -128 <= val < 128:
+                #     return "int8"
+                # elif -32768 <= val < 32768:
+                #     return "int16"
+                # elif -2147483648 <= val < 2147483647:
+                #     return "int32"
+                # else:
+                #     return "int64"
                 return "int"
             else:
                 return "int64" if isinstance(val, int) else "float64"
