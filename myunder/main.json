@@ -1,0 +1,17 @@
+{
+    "filter": {
+        "sitereference": [
+            {
+                "value": "shshs"
+            }
+        ],
+        "transactionreference": [
+            {
+                "value": "3-64-25205"
+            }
+        ]
+    }
+}
+
+
+type
